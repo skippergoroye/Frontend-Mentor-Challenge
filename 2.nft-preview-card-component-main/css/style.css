@@ -1,0 +1,85 @@
+:root {
+    --clr-softBlue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+ 
+ 
+    --clr-mainBg: hsl(217, 54%, 11%);
+    --clr-cardBg: hsl(216, 50%, 16%);
+    --clr-line: hsl(215, 32%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+ 
+ 
+    --fs-accent: 18px
+ 
+    --fw-normal: 300;
+    --fw-Regular: 400;
+    --fw-Bold: 600;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+
+body {
+    background-color: var(--clr-mainBg);
+    /* width: 100%; */
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+}
+
+
+.card {
+    background-color: var(--clr-cardBg);
+    border-radius: 15px;
+    width: 300px;
+    padding: 1rem;
+}
+
+.card-img {
+    position: relative;
+}
+
+
+.card-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h3 { 
+  margin-top: 1.5rem;
+  font-size: 20px;
+  font-weight: var(--fw-Bold)
+}
+
+
+.card p {
+    margin: 0.6rem 0 1rem 0;
+    color: var(--clr-softBlue);
+    line-height: 28px;
+    font-weight: 300;
+}
+
+
+.price-days {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--clr-line);
+}
+
+.price {
+    color: var(--clr-cyan);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+}

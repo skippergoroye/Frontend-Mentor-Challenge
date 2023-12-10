@@ -1,0 +1,116 @@
+
+
+:root {
+   --clr-softBlue: hsl(215, 51%, 70%);
+   --clr-cyan: hsl(178, 100%, 50%);
+
+
+   --clr-mainBg: hsl(217, 54%, 11%);
+   --clr-cardBg: hsl(216, 50%, 16%);
+   --clr-line: hsl(215, 32%, 27%);
+   --clr-white: hsl(0, 0%, 100%);
+
+
+   --fs-accent: 18px
+
+   --fw-normal: 300;
+   --fw-Regular: 400;
+   --fw-Bold: 600;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--clr-mainBg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.card {
+    background-color:  var(--clr-cardBg);
+    padding: 15px;
+    width: 360px;
+    border-radius: 19px;
+}
+
+
+.card > img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.card h2 {
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+
+.card p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: var(--clr-softBlue)
+}
+
+
+.card-stat {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.ethereum p {
+    color: var(--clr-cyan);
+}
+
+
+.card-stat .ethereum,
+.card-stat .clock
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.footer {
+    border-top: 1px solid var(--clr-line);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.footer > img {
+    /* height: 5%; */
+    width: 8%;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+}
+
+
+
+.footer p {
+    font-size: 0.85rem;
+}
+
+
+.footer p span {
+    color: var(--clr-white)
+}
